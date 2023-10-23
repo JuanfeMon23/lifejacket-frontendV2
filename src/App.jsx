@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter , Routes, Route} from "react-router-dom";
-import './App.css'
 import { Users } from './Users/pages/Users';
+import { Clients } from './Clients/pages/Clients';
 
 function App() {
 
@@ -12,6 +12,7 @@ function App() {
         <Routes>
             <Route path='/' element={<h1>Home</h1>}/>
             <Route path='/Users' element={<Users/>}/>
+            <Route path='/Clients' element={<Clients/>}/>
         </Routes>
       </BrowserRouter>
     </>
